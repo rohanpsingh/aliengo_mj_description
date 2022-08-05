@@ -42,7 +42,6 @@
 	<worldbody>
 		<light directional="false" diffuse=".2 .2 .2" specular="0 0 0" pos="0 0 5" dir="0 0 -1" castshadow="false" />
 		<light mode="targetbodycom" target="trunk" directional="false" diffuse=".8 .8 .8" specular="0.3 0.3 0.3" pos="0 0 4.0" dir="0 0 -1" />
-		<geom type="plane" size="1 1 0.1" rgba=".9 0 0 1" />
 		<!-- trunk -->
 		<body name="trunk" pos="0 0 1.4">
 			<inertial pos="0.008465 0.004045 -0.000763" quat="1 0 0 0" mass="9.041" fullinertia="0.033260231 0.16117211 0.17460442 0.000451628 0.000487603 4.8356e-05" />
