@@ -17,3 +17,6 @@ CMake options
 -------------
 
 - `SRC_MODE` if `ON` the files loaded by mujoco will point to the source rather than the installed files (default `OFF`)
+
+
+If you want to use with `mc-rtc`, you will also need to install the corresponding RobotModule: [mc_aliengo](https://github.com/rohanpsingh/mc_aliengo).
