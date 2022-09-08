@@ -1,12 +1,11 @@
 <mujoco model="aliengo_description">
     <compiler angle="radian" meshdir="../meshes" />
-    <!-- <size njmax="4000" nconmax="2000" /> -->
     <size njmax="500" nconmax="100" nuser_actuator="1" />
 
     <option timestep="0.001" iterations="50" tolerance="1e-10" solver="Newton" jacobian="dense" cone="pyramidal" />
 
     <default>
-        <joint limited="false" damping="0.2" pos="0 0 0" armature="0.03" />
+        <joint damping="0.01" armature="0.01" frictionloss="0.2" />
         <motor ctrllimited="false" forcelimited="false"/>
 	<default class="collision">
           <geom condim="3" group="0" rgba="1 0.423529 0.0392157 1" />
@@ -57,7 +56,7 @@
 		<geom class="visual" mesh="hip_mesh" />
 		<body name="FR_thigh" pos="0 -0.083 0">
 		    <inertial pos="-0.005607 0.003877 -0.048199" quat="0.694544 -0.0335669 -0.031246 0.717987" mass="0.639" diaginertia="0.0058474 0.00571186 0.000324584" />
-		    <joint name="FR_thigh_joint" axis="0 1 0" />
+		    <joint name="FR_thigh_joint" axis="0 1 0" limited="false" />
 		    <geom class="collision" size="0.125 0.0187 0.0215" pos="0 0 -0.125" quat="0.707107 0 0.707107 0" type="box" />
 		    <geom class="visual" mesh="thigh_mirror_mesh" />
 		    <body name="FR_calf" pos="0 0 -0.25">
@@ -79,7 +78,7 @@
 		<geom class="visual" mesh="hip_mesh" />
 		<body name="FL_thigh" pos="0 0.083 0">
 		    <inertial pos="-0.005607 -0.003877 -0.048199" quat="0.717987 -0.031246 -0.0335669 0.694544" mass="0.639" diaginertia="0.0058474 0.00571186 0.000324584" />
-		    <joint name="FL_thigh_joint" axis="0 1 0" />
+		    <joint name="FL_thigh_joint" axis="0 1 0" limited="false" />
 		    <geom class="collision" size="0.125 0.0187 0.0215" pos="0 0 -0.125" quat="0.707107 0 0.707107 0" type="box" />
 		    <geom class="visual" mesh="thigh_mesh" />
 		    <body name="FL_calf" pos="0 0 -0.25">
@@ -101,7 +100,7 @@
 		<geom class="visual" mesh="hip_mesh" />
 		<body name="RR_thigh" pos="0 -0.083 0">
 		    <inertial pos="-0.005607 0.003877 -0.048199" quat="0.694544 -0.0335669 -0.031246 0.717987" mass="0.639" diaginertia="0.0058474 0.00571186 0.000324584" />
-		    <joint name="RR_thigh_joint" axis="0 1 0" />
+		    <joint name="RR_thigh_joint" axis="0 1 0" limited="false" />
 		    <geom class="collision" size="0.125 0.0187 0.0215" pos="0 0 -0.125" quat="0.707107 0 0.707107 0" type="box" />
 		    <geom class="visual" mesh="thigh_mirror_mesh" />
 		    <body name="RR_calf" pos="0 0 -0.25">
@@ -123,7 +122,7 @@
 		<geom class="visual" mesh="hip_mesh" />
 		<body name="RL_thigh" pos="0 0.083 0">
 		    <inertial pos="-0.005607 -0.003877 -0.048199" quat="0.717987 -0.031246 -0.0335669 0.694544" mass="0.639" diaginertia="0.0058474 0.00571186 0.000324584" />
-		    <joint name="RL_thigh_joint" axis="0 1 0" />
+		    <joint name="RL_thigh_joint" axis="0 1 0" limited="false" />
 		    <geom class="collision" size="0.125 0.0187 0.0215" pos="0 0 -0.125" quat="0.707107 0 0.707107 0" type="box" />
 		    <geom class="visual" mesh="thigh_mesh" />
 		    <body name="RL_calf" pos="0 0 -0.25">
