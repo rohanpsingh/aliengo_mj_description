@@ -8,7 +8,7 @@
         <joint damping="0.01" armature="0.01" frictionloss="0.2" />
         <motor ctrllimited="false" forcelimited="false"/>
 	<default class="collision">
-          <geom condim="3" group="0" rgba="1 0.423529 0.0392157 1" />
+          <geom condim="3" friction="0.6 0.3 0.3" rgba="0.5 0.6 0.7 1" group="0" />
 	</default>
 	<default class="visual">
           <geom condim="3" material="matgeom" type="mesh" group="1" conaffinity="0" contype="0" />
