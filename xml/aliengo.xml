@@ -53,7 +53,7 @@
 		<inertial pos="-0.022191 -0.015144 -1.5e-05" quat="0.0135493 0.706835 -0.0117635 0.707151" mass="1.993" diaginertia="0.00558695 0.00491009 0.00290132" />
 		<joint name="FR_hip_joint" axis="1 0 0" limited="true" range="-1.22173 1.22173" />
 		<geom class="collision" size="0.046 0.0209" pos="0 -0.083 0" quat="0.707107 0.707107 0 0" type="cylinder" />
-		<geom class="visual" mesh="hip_mesh" />
+		<geom class="visual"  quat="0 1 0 0" mesh="hip_mesh" />
 		<body name="FR_thigh" pos="0 -0.083 0">
 		    <inertial pos="-0.005607 0.003877 -0.048199" quat="0.694544 -0.0335669 -0.031246 0.717987" mass="0.639" diaginertia="0.0058474 0.00571186 0.000324584" />
 		    <joint name="FR_thigh_joint" axis="0 1 0" limited="false" />
@@ -75,7 +75,7 @@
 		<inertial pos="-0.022191 0.015144 -1.5e-05" quat="-0.0135493 0.706835 0.0117635 0.707151" mass="1.993" diaginertia="0.00558695 0.00491009 0.00290132" />
 		<joint name="FL_hip_joint" axis="1 0 0" limited="true" range="-1.22173 1.22173" />
 		<geom class="collision" size="0.046 0.0209" pos="0 0.083 0" quat="0.707107 0.707107 0 0" type="cylinder" />
-		<geom class="visual" mesh="hip_mesh" />
+		<geom class="visual" quat="1 0 0 0" mesh="hip_mesh" />
 		<body name="FL_thigh" pos="0 0.083 0">
 		    <inertial pos="-0.005607 -0.003877 -0.048199" quat="0.717987 -0.031246 -0.0335669 0.694544" mass="0.639" diaginertia="0.0058474 0.00571186 0.000324584" />
 		    <joint name="FL_thigh_joint" axis="0 1 0" limited="false" />
@@ -97,7 +97,7 @@
 		<inertial pos="0.022191 -0.015144 -1.5e-05" quat="-0.0117635 0.707151 0.0135493 0.706835" mass="1.993" diaginertia="0.00558695 0.00491009 0.00290132" />
 		<joint name="RR_hip_joint" axis="1 0 0" limited="true" range="-1.22173 1.22173" />
 		<geom class="collision" size="0.046 0.0209" pos="0 -0.083 0" quat="0.707107 0.707107 0 0" type="cylinder" />
-		<geom class="visual" mesh="hip_mesh" />
+		<geom class="visual" quat="0 0 0 -1" mesh="hip_mesh" />
 		<body name="RR_thigh" pos="0 -0.083 0">
 		    <inertial pos="-0.005607 0.003877 -0.048199" quat="0.694544 -0.0335669 -0.031246 0.717987" mass="0.639" diaginertia="0.0058474 0.00571186 0.000324584" />
 		    <joint name="RR_thigh_joint" axis="0 1 0" limited="false" />
@@ -119,7 +119,7 @@
 		<inertial pos="0.022191 0.015144 -1.5e-05" quat="0.0117635 0.707151 -0.0135493 0.706835" mass="1.993" diaginertia="0.00558695 0.00491009 0.00290132" />
 		<joint name="RL_hip_joint" axis="1 0 0" limited="true" range="-1.22173 1.22173" />
 		<geom class="collision" size="0.046 0.0209" pos="0 0.083 0" quat="0.707107 0.707107 0 0" type="cylinder" />
-		<geom class="visual" mesh="hip_mesh" />
+		<geom class="visual" quat="0 0 1 0" mesh="hip_mesh" />
 		<body name="RL_thigh" pos="0 0.083 0">
 		    <inertial pos="-0.005607 -0.003877 -0.048199" quat="0.717987 -0.031246 -0.0335669 0.694544" mass="0.639" diaginertia="0.0058474 0.00571186 0.000324584" />
 		    <joint name="RL_thigh_joint" axis="0 1 0" limited="false" />
