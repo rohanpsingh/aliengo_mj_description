@@ -53,7 +53,7 @@
 
 	<!-- trunk -->
         <body name="trunk" pos="0 0 1.4">
-            <inertial pos="0.008465 0.004045 -0.000763" quat="1 0 0 0" mass="9.041" diaginertia="0.033260231 0.16117211 0.17460442" />
+            <inertial pos="0.00846406 0.00404455 -0.000762916" quat="-3.12625e-05 0.708321 0.00247254 0.705886" mass="9.042" diaginertia="0.174706 0.161175 0.033357" />
             <freejoint name="root"/>
             <geom class="collision" size="0.3235 0.075 0.056" type="box" />
 	    <geom class="visual" mesh="trunk_mesh" />
