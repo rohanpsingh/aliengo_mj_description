@@ -30,10 +30,6 @@
         <mesh name="thigh_mesh" file="thigh.stl" />
 	
         <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="512"/> 
-
-        <texture name="texgeom" type="cube" builtin="flat" mark="cross" width="127" height="1278" 
-            rgb1="0.8 0.6 0.4" rgb2="0.8 0.6 0.4" markrgb="1 1 1" random="0.01"/>  
-        <material name="matgeom" texture="texgeom" texuniform="true" rgba="0.8 0.6 .4 1"/>
     </asset>
 
     <worldbody>
