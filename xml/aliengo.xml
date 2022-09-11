@@ -2,10 +2,10 @@
     <compiler angle="radian" meshdir="../meshes" />
     <size njmax="500" nconmax="100" nuser_actuator="1" />
 
-    <option timestep="0.001" iterations="50" tolerance="1e-10" solver="Newton" jacobian="dense" cone="pyramidal" />
+    <option timestep="0.001" iterations="50" tolerance="1e-10" solver="Newton" jacobian="dense" cone="elliptic" impratio="100" />
 
     <default>
-        <joint damping="0.01" armature="0.01" frictionloss="0.2" />
+        <joint damping="2" armature="0.01" frictionloss="0.2" />
         <motor ctrllimited="false" forcelimited="false"/>
 	<default class="collision">
           <geom condim="3" friction="0.6 0.3 0.3" rgba="0.5 0.6 0.7 1" group="0" />
