@@ -33,7 +33,6 @@
     </asset>
 
     <worldbody>
-        <light directional="false" diffuse=".2 .2 .2" specular="0 0 0" pos="0 0 5" dir="0 0 -1" castshadow="false"/>
         <light mode="targetbodycom" target="trunk" directional="false" diffuse=".8 .8 .8" specular="0.3 0.3 0.3" pos="0 0 4.0" dir="0 0 -1"/>       
 
 	<!-- trunk -->
